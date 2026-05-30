@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: venusama/myproject:app-image
+    image: venusama/myproject:db-image
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - my_network
 
   application:
-    image: venusama/myproject:db-image
+    image: venusama/myproject:app-image
     ports:
       - "1111:8080"
     deploy:

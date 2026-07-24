@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: cont-1
-          image: venusama/k8sfirst:db-image
+          image: venusama/julyrepo:db-image
           ports:
             - containerPort: 3306
       imagePullSecrets:
